@@ -117,6 +117,7 @@ div.widget{
 	-moz-transition: color 0.3s ease, text-shadow 0.3s ease;
 	transition: color 0.3s ease, text-shadow 0.3s ease;
 	display: table;
+	cursor:pointer;
 }
 
 div.widget:hover{
