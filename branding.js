@@ -243,13 +243,14 @@ function footerImage(canvasID, size, color){
     for(key in table){
         //for every isotope of the element
         for(i=0; i<table[key].iso; i++){
-            //draw a <color> circle for unstable isotopes, a pink circle for stable isotopes, and an outline for unbound resonances:
+            //draw a <color> circle for unstable isotopes, a pink circle for stable isotopes, or leave a blank for unbound isotopes:
             if(table[key].stable.indexOf(i) != -1){
                 context.strokeStyle = '#FF3399';
                 context.fillStyle = '#FF3399';                
             } else if(table[key].unbound.indexOf(i) != -1){
-                context.strokeStyle = color;
-                context.fillStyle = 'rgba(0,0,0,0)';
+                //context.strokeStyle = color;
+                //context.fillStyle = 'rgba(0,0,0,0)';
+                continue;
             } else{
                context.strokeStyle = color;
                context.fillStyle = color;                
