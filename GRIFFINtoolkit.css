@@ -143,7 +143,7 @@ div#footer{
     padding-left: calc((100% - 1120px) / 2);
     padding-right: calc((100% - 1120px) / 2);
     padding-bottom: 50px;
-    height: 350px
+    height: 350px;
 }
 
 div#push{
